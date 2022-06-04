@@ -10,50 +10,35 @@
 </head>
 
 <body>
-    <!-- <script language="javascript">
-        function colorChange() {
-            let x = Math.floor((Math.random() * 16) + 1);
-            document.getElementById(x).style.backgroundColor = "black";
-            console.log(x);
-            setTimeout("",10000)
-        }
-    </script> -->
-    <script>
-       
-        function begin()
-            {
-                let x = Math.floor((Math.random() * 16) + 1);
-                console.log(x);
-                let colorButton = document.getElementById(x);
-                colorButton.style.background = "white";
-                setTimeout( () => {colorButton.style.background = "darkblue"}, 1000);
-     
-            }
-        
-
-    </script>
+    <script src="task1.js"></script>
     <div class="btns">
-        <button class="button3 " onclick={begin()}>Start game</button>
+        <button class="button3 " onclick={startGame()}>Start game</button>
         <br>
-        <button class="button " id="1"></button>
-        <button class="button " id="2"></button>
-        <button class="button " id="3"></button>
-        <button class="button " id="4"></button>
+        <div class="lc" >
+        <h2>Level :<a id="level"> </a></h2>
+        <h2>Score :<a id="counter"> </a></h2>
+        </div>
         <br>
-        <button class="button " id="5"></button>
-        <button class="button " id="6"></button>
-        <button class="button " id="7"></button>
-        <button class="button " id="8"></button>
+        <button class="button " id="1" onclick={colorCheck(1)}></button>
+        <button class="button " id="2" onclick={colorCheck(2)}></button>
+        <button class="button " id="3" onclick={colorCheck(3)}></button>
+        <button class="button " id="4" onclick={colorCheck(4)}></button>
         <br>
-        <button class="button " id="9"></button>
-        <button class="button " id="10"></button>
-        <button class="button " id="11"></button>
-        <button class="button " id="12"></button>
+        <button class="button " id="5" onclick={colorCheck(5)}></button>
+        <button class="button " id="6" onclick={colorCheck(6)}></button>
+        <button class="button " id="7" onclick={colorCheck(7)}></button>
+        <button class="button " id="8" onclick={colorCheck(8)}></button>
         <br>
-        <button class="button " id="13"></button>
-        <button class="button " id="14"></button>
-        <button class="button " id="15"></button>
-        <button class="button " id="16"></button>
+        <button class="button " id="9" onclick={colorCheck(9)}></button>
+        <button class="button " id="10" onclick={colorCheck(10)}></button>
+        <button class="button " id="11" onclick={colorCheck(11)}></button>
+        <button class="button " id="12" onclick={colorCheck(12)}></button>
+        <br>
+        <button class="button " id="13" onclick={colorCheck(13)}></button>
+        <button class="button " id="14" onclick={colorCheck(14)}></button>
+        <button class="button " id="15" onclick={colorCheck(15)}></button>
+        <button class="button " id="16" onclick={colorCheck(16)}></button>
+        <br>
 
     </div>
 </body>
